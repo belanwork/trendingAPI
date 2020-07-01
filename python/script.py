@@ -32,7 +32,7 @@ def parse(html):
         'starsToday': stars_today
     }
     arrayJSON.append(currentJSON)
-  f = open('result.txt', 'w')
+  f = open('./python/result/result.txt', 'w')
   return f.write(json.dumps(arrayJSON))
 
 

@@ -25,6 +25,4 @@ setInterval(() => {
 
 module.exports = router;
 
-// fs.readFile('D:/JS/trendingAPI/python/result/result.txt', 'utf8', (err, contents) => {
-// const process = spawn('python', ["D:/JS/trendingAPI/python/script.py"]);
 
