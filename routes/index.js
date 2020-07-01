@@ -7,7 +7,7 @@ router.get('/', function (req, res) {
   res.header('Access-Control-Allow-Headers', 'content-type');
   res.header('Access-Control-Allow-Methods', 'GET');
   const fs = require('fs');
-  fs.readFile('/root/trendingAPI/python/result/result.txt', 'utf8', (err, contents) => {
+  fs.readFile('../python/result/result.txt', 'utf8', (err, contents) => {
     res.set("Content-Type", "application/json");
     res.send(contents)
   })
@@ -27,3 +27,7 @@ module.exports = router;
 
 // fs.readFile('D:/JS/trendingAPI/python/result/result.txt', 'utf8', (err, contents) => {
 // const process = spawn('python', ["D:/JS/trendingAPI/python/script.py"]);
+
+
+
+// fs.readFile('/root/trendingAPI/python/result/result.txt', 'utf8', (err, contents) => {
