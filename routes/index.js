@@ -15,7 +15,7 @@ router.get('/', function (req, res) {
 
 setInterval(() => {
   const spawn = require("child_process").spawn;
-  const process = spawn('python', ["./python/script.py"]);
+  const process = spawn('python3', ["./python/script.py"]);
   process.stdout.on('data', function (data) {
     const date = new Date()
     const dateString = `Updated ${date.getHours()}:${date.getMinutes()}`
