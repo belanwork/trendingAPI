@@ -21,7 +21,7 @@ setInterval(() => {
     const dateString = `Updated ${date.getHours()}:${date.getMinutes()}`
     console.log(dateString)
   })
-}, 60000)
+}, 600000)
 
 module.exports = router;
 
